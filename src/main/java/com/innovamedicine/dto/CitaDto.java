@@ -4,12 +4,11 @@ import com.innovamedicine.entity.Cita;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
-@Getter @Setter
+@Data
 public class CitaDto {
     
     @NotNull(message = "El ID del médico es obligatorio")
